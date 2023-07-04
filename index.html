@@ -17,7 +17,22 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </head>
     <body>
-       
+        <div id="myModal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Confirma tu asistenciaa nuestra boda</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Recuerda que le ultimo día para confirmar tu sistencia es el 30 de septiembre 2023</p>
+                </div>
+                <div class="modal-footer">
+                  <button id = "modalboton" type="button" class="btn btn-primary">Entendido</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <!-- Masthead-->
         <header class="masthead">
             <div class="container position-relative">
@@ -127,11 +142,11 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h1>Ubicación</h1>
-                            <p class="text-black-50 mb-0">La ceremonia y la recepción <br>se llevarán a cabo en la <br>Hacienda Yabucu, Carretera <br>Seye - Acancéh Tablaje Catastral <br>424, 97570 Seyé, Yuc., México <br><br> 
+                            <p class="text-black-50 mb-0"><br><b>El día:</b> 12/30/2023</p><br>La ceremonia y la recepción <br>se llevarán a cabo en la <br>Hacienda Yabucú, Carretera <br>Seye - Acancéh Tablaje Catastral <br>424, 97570 Seyé, Yuc., México <br><br> 
                                 <b>Ceremonia:</b> 4:30pm <br>
                                 <b>Cena:</b> 7:30pm <br> <b>Fiesta:</b> 9:00pm - 2:00am <br>
-                                <b>El día:</b> 12/30/2023</p><br>
-                                <b>Código de vestimenta</b>  <a href="https://www.pinterest.com.mx/erandim966/boda-ginajairo/?invite_code=5a8f9ac74ab0443caad75233e0e4e860&sender=325103804259376384" target="_blank"><br>Ver ejemplos</a>
+                                
+                                <br><b>Código de vestimenta:</b><br> Formal<br>Formal playero  <a href="https://www.pinterest.com.mx/erandim966/boda-ginajairo/?invite_code=5a8f9ac74ab0443caad75233e0e4e860&sender=325103804259376384" target="_blank"><br>Ver ejemplos</a>
                         </div>
                     </div>
                 </div>
@@ -192,3 +207,7 @@
         </footer>
     </body>
 </html>
+<script>
+    let myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
+myModal.show();
+</script>
